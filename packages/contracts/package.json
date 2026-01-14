@@ -1,7 +1,7 @@
 {
   "name": "@mantle-verifi/contracts",
   "version": "1.0.0",
-  "description": "MantleVerifi Smart Contracts - ERC-3643 Compliant RWA Platform",
+  "description": "Credence Smart Contracts - ERC-3643 Compliant RWA Platform",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",

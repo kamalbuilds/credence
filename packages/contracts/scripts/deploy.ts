@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 /**
- * Deployment script for MantleVerifi contracts
+ * Deployment script for Credence contracts
  *
  * Deploys the following contracts in order:
  * 1. ClaimTopicsRegistry
@@ -33,7 +33,7 @@ async function main(): Promise<DeployedContracts> {
   const [deployer] = await ethers.getSigners();
 
   console.log("=".repeat(60));
-  console.log("MantleVerifi Deployment Script");
+  console.log("Credence Deployment Script");
   console.log("=".repeat(60));
   console.log(`Deployer: ${deployer.address}`);
   console.log(`Network: ${(await ethers.provider.getNetwork()).name}`);
@@ -93,7 +93,7 @@ async function main(): Promise<DeployedContracts> {
   console.log("\n6. Deploying VerifiToken...");
   const VerifiToken = await ethers.getContractFactory("VerifiToken");
   const verifiToken = await VerifiToken.deploy(
-    "MantleVerifi Security Token",
+    "Credence Security Token",
     "MVST",
     identityRegistryAddress,
     modularComplianceAddress,
@@ -128,7 +128,7 @@ async function main(): Promise<DeployedContracts> {
   console.log("\n8. Deploying CredentialSBT...");
   const CredentialSBT = await ethers.getContractFactory("CredentialSBT");
   const credentialSBT = await CredentialSBT.deploy(
-    "MantleVerifi Credential",
+    "Credence Credential",
     "MVC",
     "https://api.mantleverifi.io/metadata/"
   );
@@ -157,7 +157,7 @@ async function main(): Promise<DeployedContracts> {
     rwaGateAddress,
     verifiTokenAddress,
     verifiTokenAddress, // Using token as investment asset for demo
-    "MantleVerifi RWA Pool",
+    "Credence RWA Pool",
     "MVRP",
     ethers.parseEther("1000000"), // 1M capacity
     ethers.parseEther("1") // 1:1 exchange rate

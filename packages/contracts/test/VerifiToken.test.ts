@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { ethers } from "hardhat";
 import { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
 
-describe("MantleVerifi Contracts", function () {
+describe("Credence Contracts", function () {
   let owner: SignerWithAddress;
   let agent: SignerWithAddress;
   let investor1: SignerWithAddress;
@@ -54,7 +54,7 @@ describe("MantleVerifi Contracts", function () {
     // Deploy VerifiToken
     const VerifiToken = await ethers.getContractFactory("VerifiToken");
     verifiToken = await VerifiToken.deploy(
-      "MantleVerifi Security Token",
+      "Credence Security Token",
       "MVST",
       await identityRegistry.getAddress(),
       await modularCompliance.getAddress(),
@@ -68,7 +68,7 @@ describe("MantleVerifi Contracts", function () {
     // Deploy CredentialSBT
     const CredentialSBT = await ethers.getContractFactory("CredentialSBT");
     credentialSBT = await CredentialSBT.deploy(
-      "MantleVerifi Credential",
+      "Credence Credential",
       "MVC",
       "https://api.mantleverifi.io/metadata/"
     );
@@ -77,7 +77,7 @@ describe("MantleVerifi Contracts", function () {
 
   describe("VerifiToken", function () {
     it("should have correct name and symbol", async function () {
-      expect(await verifiToken.name()).to.equal("MantleVerifi Security Token");
+      expect(await verifiToken.name()).to.equal("Credence Security Token");
       expect(await verifiToken.symbol()).to.equal("MVST");
     });
 
@@ -131,7 +131,7 @@ describe("MantleVerifi Contracts", function () {
 
   describe("CredentialSBT", function () {
     it("should have correct name and symbol", async function () {
-      expect(await credentialSBT.name()).to.equal("MantleVerifi Credential");
+      expect(await credentialSBT.name()).to.equal("Credence Credential");
       expect(await credentialSBT.symbol()).to.equal("MVC");
     });
 

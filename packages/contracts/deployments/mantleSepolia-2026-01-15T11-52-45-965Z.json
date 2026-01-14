@@ -1,0 +1,18 @@
+{
+  "network": "mantleSepolia",
+  "chainId": "5003",
+  "deployer": "0x07fCD7663E8E97cD2a3b118Fb60B106feE0317CD",
+  "timestamp": "2026-01-15T11:52:46.249Z",
+  "contracts": {
+    "claimTopicsRegistry": "0xd59A380EDEC7A7c5b0ec4D383ED9B833121AB7c2",
+    "trustedIssuersRegistry": "0x524602055273d0484730DC1B8AD7Dd346a5E4d3d",
+    "identityRegistryStorage": "0xeA647A33fDd14Fa5cE8D4981A7DF03DbdF1EceCd",
+    "identityRegistry": "0xAe5C1B0821e75Cbceca39e4Aa0e5f3691D7340e3",
+    "modularCompliance": "0x49e048Ac1Ab63Cb26B30d14A115d5Ce610116139",
+    "verifiToken": "0x932029D18aED907867DEa9B468EC4b299e43C0dA",
+    "sp1CredentialVerifier": "0x4335C610aFfdA179b8C1d7e71eA38ff0F54B2F9b",
+    "credentialSBT": "0xfaEF33E2f26FdA8581ED46F93936E40D0168b0CB",
+    "rwaGate": "0x869D70699C93E29A2538558Cd35Ac0997c644414",
+    "rwaPool": "0x5611192b09ED58d389ccc186F1ebAf43eFeE11D8"
+  }
+}
