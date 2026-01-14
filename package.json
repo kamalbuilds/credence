@@ -1,0 +1,27 @@
+{
+  "name": "mantle-verifi",
+  "version": "1.0.0",
+  "description": "ZK-powered identity and compliance protocol for RWAs on Mantle",
+  "private": true,
+  "workspaces": [
+    "/*"
+  ],
+  "scripts": {
+    "contracts:compile": "npm run compile --workspace=contracts",
+    "contracts:test": "npm run test --workspace=contracts",
+    "contracts:deploy": "npm run deploy --workspace=contracts",
+    "frontend:dev": "npm run dev --workspace=frontend",
+    "frontend:build": "npm run build --workspace=frontend",
+    "zkp:build": "npm run build --workspace=zkp"
+  },
+  "keywords": [
+    "zkp",
+    "rwa",
+    "sbt",
+    "mantle",
+    "identity",
+    "compliance"
+  ],
+  "author": "",
+  "license": "MIT"
+}
