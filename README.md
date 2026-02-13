@@ -84,13 +84,13 @@ credence/
 ```bash
 # Install contract dependencies
 cd packages/contracts
-npm install
+bun install
 
 # Compile contracts
-npm run compile
+bun run compile
 
 # Run tests
-npm run test
+bun run test
 ```
 
 ### Deployment
@@ -103,7 +103,7 @@ cp .env.example .env
 nano .env
 
 # Deploy to Mantle Sepolia
-npm run deploy:mantle-sepolia
+bun run deploy:mantle-sepolia
 ```
 
 ### Building ZK Proofs (Rust)
